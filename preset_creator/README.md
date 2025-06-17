@@ -256,7 +256,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Documentation**: [Wiki](https://github.com/ortoiot/preset-creator/wiki)
 - **Community**: [Discord](https://discord.gg/ortoiot)
 - **Issues**: [GitHub Issues](https://github.com/ortoiot/preset-creator/issues)
-- **Email**: support@ortoiot.com
+- **Email**: info@ortoiot.com
 
 ## 🎯 Roadmap
 
