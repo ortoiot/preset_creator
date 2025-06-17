@@ -1,0 +1,932 @@
+{
+    "version": "2.1",
+    "created_at": "2025-06-10T15:30:00.000000",
+    "presets": {
+        "all_off": {
+            "id": "all_off",
+            "name": "All Off",
+            "description": "Disables all automations - Useful for reset before applying a new preset",
+            "category": "system",
+            "icon": "⚫",
+            "type": "static",
+            "system_preset": true,
+            "order": 0,
+            "created_at": "2025-06-10T01:10:58.694214",
+            "settings": {
+                "temperature": {
+                    "enabled": false,
+                    "value": 20
+                },
+                "humidity": {
+                    "enabled": false,
+                    "value": 60
+                },
+                "co2": {
+                    "enabled": false,
+                    "value": 800
+                },
+                "ec": {
+                    "enabled": false,
+                    "value": 1.2
+                },
+                "irrigation": {
+                    "enabled": false,
+                    "duration": 5,
+                    "interval": 12
+                },
+                "light": {
+                    "enabled": false,
+                    "duration": 12,
+                    "startTime": "08:00"
+                },
+                "lamp": {
+                    "enabled": false,
+                    "distance": 30
+                },
+                "foliar_feeding": {
+                    "enabled": false,
+                    "frequency": 3,
+                    "duration": 2,
+                    "ec_concentration": 0.6,
+                    "schedule_time": "19:00"
+                },
+                "ventilation": {
+                    "enabled": false,
+                    "duration": 15,
+                    "interval": 3
+                }
+            }
+        },
+        "indica_vegetative": {
+            "id": "indica_vegetative",
+            "name": "Indica - Vegetative Growth",
+            "description": "Preset optimized for Indica varieties during vegetative phase. Moderate temperature and high humidity to favor the compact growth typical of Indica.",
+            "category": "cannabis",
+            "icon": "🌿",
+            "type": "static",
+            "system_preset": true,
+            "order": 1,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 25
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 65
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1200
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.6
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 4,
+                    "interval": 8
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 18,
+                    "startTime": "06:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 40
+                },
+                "foliar_feeding": {
+                    "enabled": true,
+                    "frequency": 3,
+                    "duration": 2,
+                    "ec_concentration": 0.8,
+                    "schedule_time": "19:00"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 20,
+                    "interval": 2
+                }
+            }
+        },
+        "indica_flowering": {
+            "id": "indica_flowering",
+            "name": "Indica - Flowering",
+            "description": "Preset optimized for Indica varieties during flowering. Slightly lower temperature and reduced humidity to prevent mold and favor resin production.",
+            "category": "cannabis",
+            "icon": "🌸",
+            "type": "static",
+            "system_preset": true,
+            "order": 2,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 23
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 45
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1300
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.8
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 3,
+                    "interval": 12
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 12,
+                    "startTime": "08:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 35
+                },
+                "foliar_feeding": {
+                    "enabled": false,
+                    "frequency": 7,
+                    "duration": 1,
+                    "ec_concentration": 0.6,
+                    "schedule_time": "20:00"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 25,
+                    "interval": 2
+                }
+            }
+        },
+        "sativa_vegetative": {
+            "id": "sativa_vegetative",
+            "name": "Sativa - Vegetative Growth",
+            "description": "Preset optimized for Sativa varieties during vegetative phase. Higher temperatures and abundant CO2 to support the vigorous growth typical of Sativa.",
+            "category": "cannabis",
+            "icon": "🌱",
+            "type": "static",
+            "system_preset": true,
+            "order": 3,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 27
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 70
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1400
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.8
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 5,
+                    "interval": 6
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 18,
+                    "startTime": "06:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 45
+                },
+                "foliar_feeding": {
+                    "enabled": true,
+                    "frequency": 2,
+                    "duration": 3,
+                    "ec_concentration": 0.9,
+                    "schedule_time": "19:30"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 15,
+                    "interval": 2
+                }
+            }
+        },
+        "sativa_flowering": {
+            "id": "sativa_flowering",
+            "name": "Sativa - Flowering",
+            "description": "Preset optimized for Sativa varieties during flowering. Maintains moderate temperatures and controlled humidity for the long flowering phase of Sativa.",
+            "category": "cannabis",
+            "icon": "🌺",
+            "type": "static",
+            "system_preset": true,
+            "order": 4,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 25
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 50
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1400
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 2.0
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 4,
+                    "interval": 10
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 12,
+                    "startTime": "08:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 40
+                },
+                "foliar_feeding": {
+                    "enabled": false,
+                    "frequency": 10,
+                    "duration": 1,
+                    "ec_concentration": 0.5,
+                    "schedule_time": "20:30"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 20,
+                    "interval": 2
+                }
+            }
+        },
+        "hybrid_vegetative": {
+            "id": "hybrid_vegetative",
+            "name": "Hybrid - Vegetative Growth",
+            "description": "Balanced preset for Hybrid varieties during vegetative phase. Combines optimal characteristics of Indica and Sativa for balanced growth.",
+            "category": "cannabis",
+            "icon": "🌿",
+            "type": "static",
+            "system_preset": true,
+            "order": 5,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 26
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 65
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1200
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.7
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 4,
+                    "interval": 7
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 18,
+                    "startTime": "06:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 42
+                },
+                "foliar_feeding": {
+                    "enabled": true,
+                    "frequency": 3,
+                    "duration": 2,
+                    "ec_concentration": 0.8,
+                    "schedule_time": "19:15"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 17,
+                    "interval": 2
+                }
+            }
+        },
+        "hybrid_flowering": {
+            "id": "hybrid_flowering",
+            "name": "Hybrid - Flowering",
+            "description": "Balanced preset for Hybrid varieties during flowering. Optimizes environment to maximize yield and quality of hybrid buds.",
+            "category": "cannabis",
+            "icon": "🌸",
+            "type": "static",
+            "system_preset": true,
+            "order": 6,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 24
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 47
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1350
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.9
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 3,
+                    "interval": 11
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 12,
+                    "startTime": "08:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 37
+                },
+                "foliar_feeding": {
+                    "enabled": false,
+                    "frequency": 8,
+                    "duration": 1,
+                    "ec_concentration": 0.55,
+                    "schedule_time": "20:15"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 22,
+                    "interval": 2
+                }
+            }
+        },
+        "autoflower": {
+            "id": "autoflower",
+            "name": "Autoflower - Complete Cycle",
+            "description": "Universal preset for autoflowering varieties. Maintains constant conditions throughout the life cycle without photoperiod changes.",
+            "category": "cannabis",
+            "icon": "🔄",
+            "type": "static",
+            "system_preset": true,
+            "order": 7,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 24
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 55
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1000
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.4
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 3,
+                    "interval": 8
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 18,
+                    "startTime": "07:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 40
+                },
+                "foliar_feeding": {
+                    "enabled": true,
+                    "frequency": 4,
+                    "duration": 2,
+                    "ec_concentration": 0.7,
+                    "schedule_time": "19:30"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 15,
+                    "interval": 3
+                }
+            }
+        },
+        "cbd_rich": {
+            "id": "cbd_rich",
+            "name": "CBD Rich Cannabis",
+            "description": "Specialized preset for CBD-rich varieties. Controlled environment with minimal stress to favor therapeutic cannabinoid production.",
+            "category": "cannabis",
+            "icon": "🌿",
+            "type": "static",
+            "system_preset": true,
+            "order": 8,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 22
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 50
+                },
+                "co2": {
+                    "enabled": true,
+                    "value": 1150
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 1.5
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 4,
+                    "interval": 9
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 14,
+                    "startTime": "07:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 45
+                },
+                "foliar_feeding": {
+                    "enabled": true,
+                    "frequency": 5,
+                    "duration": 2,
+                    "ec_concentration": 0.6,
+                    "schedule_time": "18:30"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 18,
+                    "interval": 3
+                }
+            }
+        },
+        "cannabis_clones": {
+            "id": "cannabis_clones",
+            "name": "Cannabis - Clones/Cuttings",
+            "description": "Gentle preset for newly rooted clones and cuttings. High humidity and moderate lighting to favor root development.",
+            "category": "cannabis",
+            "icon": "🌱",
+            "type": "static",
+            "system_preset": true,
+            "order": 9,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 25
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 75
+                },
+                "co2": {
+                    "enabled": false,
+                    "value": 600
+                },
+                "ec": {
+                    "enabled": true,
+                    "value": 0.8
+                },
+                "irrigation": {
+                    "enabled": true,
+                    "duration": 2,
+                    "interval": 6
+                },
+                "light": {
+                    "enabled": true,
+                    "duration": 18,
+                    "startTime": "06:00"
+                },
+                "lamp": {
+                    "enabled": true,
+                    "distance": 60
+                },
+                "foliar_feeding": {
+                    "enabled": true,
+                    "frequency": 2,
+                    "duration": 1,
+                    "ec_concentration": 0.4,
+                    "schedule_time": "18:00"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 10,
+                    "interval": 4
+                }
+            }
+        },
+        "cannabis_drying": {
+            "id": "cannabis_drying",
+            "name": "Cannabis - Drying",
+            "description": "Preset for post-harvest drying. Controlled temperature, balanced humidity and complete darkness to preserve terpenes and cannabinoids.",
+            "category": "cannabis",
+            "icon": "🌾",
+            "type": "static",
+            "system_preset": true,
+            "order": 10,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "settings": {
+                "temperature": {
+                    "enabled": true,
+                    "value": 18
+                },
+                "humidity": {
+                    "enabled": true,
+                    "value": 55
+                },
+                "co2": {
+                    "enabled": false,
+                    "value": 400
+                },
+                "ec": {
+                    "enabled": false,
+                    "value": 0.0
+                },
+                "irrigation": {
+                    "enabled": false,
+                    "duration": 0,
+                    "interval": 24
+                },
+                "light": {
+                    "enabled": false,
+                    "duration": 0,
+                    "startTime": "00:00"
+                },
+                "lamp": {
+                    "enabled": false,
+                    "distance": 100
+                },
+                "foliar_feeding": {
+                    "enabled": false,
+                    "frequency": 0,
+                    "duration": 0,
+                    "ec_concentration": 0.0,
+                    "schedule_time": "00:00"
+                },
+                "ventilation": {
+                    "enabled": true,
+                    "duration": 45,
+                    "interval": 1
+                }
+            }
+        },
+        "cannabis_complete_cycle": {
+            "id": "cannabis_complete_cycle",
+            "name": "Cannabis - Complete Automatic Cycle",
+            "description": "Progressive preset that automatically manages the entire cannabis life cycle from germination to harvest.",
+            "category": "cannabis",
+            "icon": "🔄",
+            "type": "progressive",
+            "system_preset": true,
+            "order": 11,
+            "created_at": "2025-06-10T15:30:00.000000",
+            "total_duration": 133,
+            "current_phase": 0,
+            "start_date": null,
+            "phases": [
+                {
+                    "name": "Germination",
+                    "duration": 7,
+                    "settings": {
+                        "temperature": {
+                            "enabled": true,
+                            "value": 25
+                        },
+                        "humidity": {
+                            "enabled": true,
+                            "value": 80
+                        },
+                        "co2": {
+                            "enabled": false,
+                            "value": 400
+                        },
+                        "light": {
+                            "enabled": true,
+                            "duration": 18,
+                            "startTime": "06:00"
+                        },
+                        "irrigation": {
+                            "enabled": true,
+                            "duration": 1,
+                            "interval": 24
+                        },
+                        "ec": {
+                            "enabled": true,
+                            "value": 0.4
+                        },
+                        "lamp": {
+                            "enabled": true,
+                            "distance": 80
+                        },
+                        "foliar_feeding": {
+                            "enabled": false,
+                            "frequency": 0,
+                            "duration": 0,
+                            "ec_concentration": 0.0,
+                            "schedule_time": "00:00"
+                        },
+                        "ventilation": {
+                            "enabled": true,
+                            "duration": 10,
+                            "interval": 4
+                        }
+                    }
+                },
+                {
+                    "name": "Seedlings",
+                    "duration": 14,
+                    "settings": {
+                        "temperature": {
+                            "enabled": true,
+                            "value": 24
+                        },
+                        "humidity": {
+                            "enabled": true,
+                            "value": 70
+                        },
+                        "co2": {
+                            "enabled": true,
+                            "value": 600
+                        },
+                        "light": {
+                            "enabled": true,
+                            "duration": 18,
+                            "startTime": "06:00"
+                        },
+                        "irrigation": {
+                            "enabled": true,
+                            "duration": 2,
+                            "interval": 12
+                        },
+                        "ec": {
+                            "enabled": true,
+                            "value": 0.8
+                        },
+                        "lamp": {
+                            "enabled": true,
+                            "distance": 60
+                        },
+                        "foliar_feeding": {
+                            "enabled": true,
+                            "frequency": 3,
+                            "duration": 1,
+                            "ec_concentration": 0.4,
+                            "schedule_time": "19:00"
+                        },
+                        "ventilation": {
+                            "enabled": true,
+                            "duration": 15,
+                            "interval": 3
+                        }
+                    }
+                },
+                {
+                    "name": "Vegetative Growth",
+                    "duration": 35,
+                    "settings": {
+                        "temperature": {
+                            "enabled": true,
+                            "value": 24
+                        },
+                        "humidity": {
+                            "enabled": true,
+                            "value": 65
+                        },
+                        "co2": {
+                            "enabled": true,
+                            "value": 1000
+                        },
+                        "light": {
+                            "enabled": true,
+                            "duration": 18,
+                            "startTime": "06:00"
+                        },
+                        "irrigation": {
+                            "enabled": true,
+                            "duration": 3,
+                            "interval": 8
+                        },
+                        "ec": {
+                            "enabled": true,
+                            "value": 1.4
+                        },
+                        "lamp": {
+                            "enabled": true,
+                            "distance": 45
+                        },
+                        "foliar_feeding": {
+                            "enabled": true,
+                            "frequency": 3,
+                            "duration": 2,
+                            "ec_concentration": 0.8,
+                            "schedule_time": "19:00"
+                        },
+                        "ventilation": {
+                            "enabled": true,
+                            "duration": 20,
+                            "interval": 2
+                        }
+                    }
+                },
+                {
+                    "name": "Pre-Flowering",
+                    "duration": 14,
+                    "settings": {
+                        "temperature": {
+                            "enabled": true,
+                            "value": 23
+                        },
+                        "humidity": {
+                            "enabled": true,
+                            "value": 60
+                        },
+                        "co2": {
+                            "enabled": true,
+                            "value": 1100
+                        },
+                        "light": {
+                            "enabled": true,
+                            "duration": 12,
+                            "startTime": "08:00"
+                        },
+                        "irrigation": {
+                            "enabled": true,
+                            "duration": 3.5,
+                            "interval": 10
+                        },
+                        "ec": {
+                            "enabled": true,
+                            "value": 1.6
+                        },
+                        "lamp": {
+                            "enabled": true,
+                            "distance": 40
+                        },
+                        "foliar_feeding": {
+                            "enabled": true,
+                            "frequency": 5,
+                            "duration": 1,
+                            "ec_concentration": 0.8,
+                            "schedule_time": "20:00"
+                        },
+                        "ventilation": {
+                            "enabled": true,
+                            "duration": 18,
+                            "interval": 2.5
+                        }
+                    }
+                },
+                {
+                    "name": "Flowering",
+                    "duration": 49,
+                    "settings": {
+                        "temperature": {
+                            "enabled": true,
+                            "value": 22
+                        },
+                        "humidity": {
+                            "enabled": true,
+                            "value": 50
+                        },
+                        "co2": {
+                            "enabled": true,
+                            "value": 1200
+                        },
+                        "light": {
+                            "enabled": true,
+                            "duration": 12,
+                            "startTime": "08:00"
+                        },
+                        "irrigation": {
+                            "enabled": true,
+                            "duration": 4,
+                            "interval": 12
+                        },
+                        "ec": {
+                            "enabled": true,
+                            "value": 1.8
+                        },
+                        "lamp": {
+                            "enabled": true,
+                            "distance": 35
+                        },
+                        "foliar_feeding": {
+                            "enabled": false,
+                            "frequency": 7,
+                            "duration": 1,
+                            "ec_concentration": 0.6,
+                            "schedule_time": "20:00"
+                        },
+                        "ventilation": {
+                            "enabled": true,
+                            "duration": 15,
+                            "interval": 3
+                        }
+                    }
+                },
+                {
+                    "name": "Maturation",
+                    "duration": 14,
+                    "settings": {
+                        "temperature": {
+                            "enabled": true,
+                            "value": 20
+                        },
+                        "humidity": {
+                            "enabled": true,
+                            "value": 45
+                        },
+                        "co2": {
+                            "enabled": false,
+                            "value": 400
+                        },
+                        "light": {
+                            "enabled": true,
+                            "duration": 10,
+                            "startTime": "09:00"
+                        },
+                        "irrigation": {
+                            "enabled": true,
+                            "duration": 2,
+                            "interval": 24
+                        },
+                        "ec": {
+                            "enabled": true,
+                            "value": 0.8
+                        },
+                        "lamp": {
+                            "enabled": true,
+                            "distance": 40
+                        },
+                        "foliar_feeding": {
+                            "enabled": false,
+                            "frequency": 0,
+                            "duration": 0,
+                            "ec_concentration": 0.0,
+                            "schedule_time": "00:00"
+                        },
+                        "ventilation": {
+                            "enabled": true,
+                            "duration": 30,
+                            "interval": 2
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "categories": {
+        "system": {
+            "name": "System",
+            "description": "System presets for general control",
+            "icon": "⚙️"
+        },
+        "cannabis": {
+            "name": "Cannabis",
+            "description": "Specialized presets for Cannabis cultivation",
+            "icon": "🌿"
+        },
+        "custom": {
+            "name": "Custom",
+            "description": "User-created presets",
+            "icon": "🎨"
+        }
+    }
+}
